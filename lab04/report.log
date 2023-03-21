@@ -1,0 +1,85 @@
+2023-03-15 15:07:14,099 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:07:29,086 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:16:28,645 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:17:23,704 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:17:27,057 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:30:25,691 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:30:30,037 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "/home/toddi/.local/lib/python3.10/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+  File "mtrand.pyx", line 1154, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 741, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 6).
+2023-03-15 15:31:54,325 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-15 15:31:55,259 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 1.0076454234569856, best pos: [0.96969372 0.14860913 0.18688228 0.24478045 0.97710021 0.99794491]
+2023-03-15 15:32:35,924 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-15 15:32:36,844 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -0.431803586491575, best pos: [0.70523815 0.70375421 0.79601055 0.01986539 0.99762112 0.99530262]
+2023-03-15 15:33:02,363 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-15 15:33:03,426 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -0.42629835152682205, best pos: [0.62089827 0.56856605 0.44266692 0.05087546 0.9992864  0.98813799]
+2023-03-15 15:33:26,153 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-15 15:33:27,010 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -2.8361048293498214, best pos: [0.56497346 0.52869862 0.99338181 0.99703974 0.0353392  0.34303444]
+2023-03-15 15:34:08,323 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-15 15:34:09,627 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -2.8172978841617446, best pos: [0.79484531 0.66111826 0.99511068 0.99588044 0.66774128 0.24869135]
+2023-03-21 12:51:47,167 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-21 12:51:47,743 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -2.8037556019569805, best pos: [0.62666786 0.59283083 0.98839149 0.99264377 0.41268432 0.56734035]
+2023-03-21 12:52:28,551 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-21 12:52:31,967 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -2.7752213542708946, best pos: [0.75389628 0.58787244 0.99930464 0.9989811  0.51968212 0.59120672]
+2023-03-21 12:53:56,971 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-21 12:54:01,316 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.3526716806656348, best pos: [0.70855473 0.62491796 0.99970408 0.99767427 0.39947758 0.2009773 ]
+2023-03-21 12:56:07,913 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-21 12:56:10,844 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -2.8153324416515306, best pos: [0.67284902 0.68247465 0.999613   0.9995656  0.40707125 0.47577235]
+2023-03-21 13:02:07,505 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-21 13:02:10,304 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.3534299331213276, best pos: [0.7328806  0.69979773 0.99708927 0.99858078 0.43234996 0.28939301]
+2023-03-21 13:07:30,930 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.6}
+2023-03-21 13:07:33,584 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.3528878236992781, best pos: [0.78252075 0.68932059 0.99873345 0.9980025  0.17854378 0.58483571]
