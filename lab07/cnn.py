@@ -1,5 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from scipy.signal import convolve
 
 # tworzymy tablice o wymiarach 128x128x3 (3 kanaly to RGB)
 # uzupelnioną zerami = kolor czarny
@@ -32,6 +33,25 @@ for i in range(128):
         elif (i-15)**2 + (j-110)**2 == 25 or (i-15)**2 + (j-110)**2 == 26:
             draw(data, i, j, 255)
 
+filter_horizontal = np.array([[1, 0, -1],
+                             [1, 0, -1],
+                             [1, 0, -1]]) 
+
+filter_vertical = np.array([[1, 1, 1],
+                            [0, 0, 0],
+                            [-1,-1,-1]])
+
+filter_oblique = np.array([[0, 1, 2],
+                          [-1, 0, 1],
+                          [-2,-1, 0]])
+
+def con(arr, kernel):
+    result = np.zeros((126, 126), dtype=np.float32)
+    for i in range(3):
+        result += convolve(arr[:,:,i], kernel, mode='valid')
+    return result
+
+
 # konwersja macierzy na obrazek i wyświetlenie
-plt.imshow(data, interpolation='nearest')
+plt.imshow(con(data, filter_vertical), interpolation='nearest', cmap='gray')
 plt.show()
