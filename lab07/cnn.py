@@ -103,9 +103,9 @@ horizontal_edges = convolve2d(data[1:-1], horizontal_kernel[::-1], mode='valid')
 sobel_edges = convolve2d(data[1:-1], sobel_kernel[::-1], mode='valid')
 
 # apply kernels with stride=2 and no padding
-vertical_edges_s2 = convolve2d(data[::2], vertical_kernel[::-1], mode='valid')[::2]
-horizontal_edges_s2 = convolve2d(data[::2], horizontal_kernel[::-1], mode='valid')[::2]
-sobel_edges_s2 = convolve2d(data[::2], sobel_kernel[::-1], mode='valid')[::2]
+vertical_edges_s2 = convolve2d(data[1:-1, 1:-1], vertical_kernel[::-1], mode='valid')[::2, ::2]
+horizontal_edges_s2 = convolve2d(data[1:-1, 1:-1], horizontal_kernel[::-1], mode='valid')[::2, ::2]
+sobel_edges_s2 = convolve2d(data[1:-1, 1:-1], sobel_kernel[::-1], mode='valid')[::2, ::2]
 
 # plot results
 fig = plt.figure(figsize=(10,10))
