@@ -7,10 +7,13 @@ from tensorflow.keras.layers import Dropout
 from tensorflow.keras.layers import LSTM
 from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras.utils import to_categorical
+
+
 # load ascii text and covert to lowercase
 filename = "wonderland.txt"
 raw_text = open(filename, 'r', encoding='utf-8').read()
 raw_text = raw_text.lower()
+
 # create mapping of unique chars to integers
 tokenized_text = wordpunct_tokenize(raw_text)
 tokens = sorted(list(dict.fromkeys(tokenized_text)))
@@ -38,23 +41,29 @@ for i in range(0, n_tokens - seq_length, 1):
 	dataY.append(tok_to_int[seq_out])
 n_patterns = len(dataX)
 print("Total Patterns: ", n_patterns)
+
 # reshape X to be [samples, time steps, features]
 X = np.reshape(dataX, (n_patterns, seq_length, 1))
+
 # normalize
 X = X / float(n_token_vocab)
+
 # one hot encode the output variable
 y = to_categorical(dataY)
+
 # define the LSTM model
 model = Sequential()
 model.add(LSTM(256, input_shape=(X.shape[1], X.shape[2])))
 model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
-filename = "big-token-model-30-2.3772.hdf5"
+filename = "big-token-model-20-5.0091.hdf5"
 model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
+
 # define the checkpoint
 filepath="big-token-model-{epoch:02d}-{loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
+
 # fit the model
-model.fit(X, y, epochs=20, batch_size=128, callbacks=callbacks_list)
+model.fit(X, y, epochs=5, batch_size=128, callbacks=callbacks_list)
