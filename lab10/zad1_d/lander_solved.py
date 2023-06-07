@@ -22,7 +22,7 @@ actions = [
 for i in range(len(actions)):
    action = actions[i]  
    observation, reward, terminated, truncated, info = env.step(action)
-
+   
    if terminated or truncated:
       observation, info = env.reset(seed=42)
 env.close()
